@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Dynamic Relative GPA Calculator</h1>
+
+    <div class="table-wrapper">
+        <table id="gpaTable">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Credit</th>
+                    <th>Total Marks</th>
+                    <th>Lowest</th>
+                    <th>Highest</th>
+                    <th>Your Marks</th>
+                    <th>Class Avg</th>
+                    <th>GPA</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div class="buttons">
+        <button onclick="addRow()">➕ Add Subject</button>
+        <button onclick="calculateGPA()">📊 Calculate GPA</button>
+    </div>
+
+    <div id="result"></div>
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>
